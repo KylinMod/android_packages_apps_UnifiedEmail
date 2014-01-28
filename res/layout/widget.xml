@@ -52,14 +52,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:freezesText="true"
-                android:includeFontPadding="false" />
+                android:includeFontPadding="false"
+                android:textColor="@color/widget_title_color" />
             <TextView
                 android:id="@+id/widget_account_noflip"
                 style="@style/WidgetSubtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:freezesText="true"
-                android:includeFontPadding="false"/>
+                android:includeFontPadding="false"
+                android:textColor="@color/widget_subtitle_color"/>
             <ViewFlipper
                 android:id="@+id/widget_account_unread_flipper"
                 android:layout_width="wrap_content"
@@ -81,7 +83,8 @@
                     style="@style/WidgetSubtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:includeFontPadding="false" />
+                    android:includeFontPadding="false"
+                    android:textColor="@color/widget_unread_color" />
             </ViewFlipper>
         </LinearLayout>
         <ImageButton
@@ -120,7 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:cacheColorHint="#00000000"
+        android:cacheColorHint="@color/transparent"
         android:background="@drawable/gradient_bg_widget_holo"
         style="@style/ConversationListFade" />
     <TextView
